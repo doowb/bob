@@ -1,0 +1,53 @@
+{
+  "name": "bob",
+  "description": "Bob the Builder's simple Assemble implementation.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/doowb/bob",
+  "author": {
+    "name": "Brian Woodward",
+    "url": "https://github.com/doowb"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/doowb/bob.git"
+  },
+  "bugs": {
+    "url": "https://github.com/doowb/bob/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/doowb/bob/blob/master/LICENSE-MIT"
+    }
+  ],
+  "keywords": [
+    "docs",
+    "documentation",
+    "generate",
+    "generator",
+    "markdown",
+    "templates",
+    "verb"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.8"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "devDependencies": {
+    "verb": "~0.2.0",
+    "chai": "~1.9.1",
+    "mocha": "~1.18.2"
+  },
+  "dependencies": {
+    "class-extend": "^0.1.1",
+    "npm": "^1.4.10",
+    "install": "^0.1.7",
+    "handlebars": "^2.0.0-alpha.2",
+    "fs-utils": "^0.4.3",
+    "gray-matter": "^0.3.5",
+    "lodash": "^2.4.1"
+  }
+}
