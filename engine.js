@@ -9,9 +9,14 @@ var Engine = Base.extend({
   },
 
   render: function (component) {
-    console.log('component', component);
     var context = component.context();
     return Handlebars.compile(component._content, {data: context})(context);
+  },
+
+  registerPartials: function () {
+    this._assemble._partials.forEach(function (partial) {
+      Handlebars.registerPartial(partial.name, partial._content);
+    });
   }
 
 });
